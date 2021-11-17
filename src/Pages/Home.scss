@@ -51,7 +51,7 @@ $mobile: 480px;
   .App .header p {
     font-family: 'Josefin Sans', sans-serif;
     width: 45%;
-    color: var(--fontcolor);
+    color: red;
     font-size: 40px;
 
     @media (min-width: $mobile) and (max-width: $tablet-1) {
