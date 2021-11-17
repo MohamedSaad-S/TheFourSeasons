@@ -1,0 +1,36 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+
+.main-gallery {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 150px;
+}
+
+.main-gallery .container .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 50px auto;
+}
+
+.main-gallery .container .first-row {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-gallery .container .row .col {
+    margin: 25px;
+    border: solid 2px #9b9b9b;
+    padding: 0px;
+    width: 50%;
+}
+
+.main-gallery .container .row .col .image-box img {
+    max-width: 100%;
+}

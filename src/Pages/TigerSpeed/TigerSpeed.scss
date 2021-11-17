@@ -1,0 +1,77 @@
+$desktop: 1260px;
+$desktop-1: 1259px;
+$laptop: 1024px;
+$laptop-1: 1023px;
+$tablet: 768px;
+$tablet-1: 767px;
+$mobile: 480px;
+
+:root {
+    --main: rgb(255, 255, 255);
+    --fontcolor: rgb(255, 255, 255);
+    --footer: rgba(31, 31, 31, 0.801);
+  }
+  
+  * {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  .main-tigerspeed {
+    background: rgba(0, 0, 0, 0.055) url("../../imgs/bg11.jpg") fixed center;
+    background-blend-mode: darken;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .main-tigerspeed .logo {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main-tigerspeed .logo img{
+    margin-top: 75px;
+    margin-bottom: 25px;
+  }
+  .main-tigerspeed .logo a img {
+    width: 150px;
+  }
+  
+  .main-tigerspeed .header {
+    margin: 25px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.6));
+  width: 70%;
+  border-radius: 10px;
+  overflow: hidden;
+  @media (min-width:$mobile) and (max-width:$tablet-1) {
+    width: 75%;
+  }
+  @media (min-width:$tablet) and (max-width:$laptop-1) {
+    width: 65%;
+  }
+  }
+  
+  .main-tigerspeed .header p {
+    font-family: "Josefin Sans", sans-serif;
+    width: 100%;
+    color: var(--fontcolor);
+    font-size: 40px;
+    margin: 0px;
+    justify-content: center;
+    @media (min-width:$mobile) and (max-width:$tablet-1) {
+      font-size: 20px;
+    }
+    @media (min-width:$tablet) and (max-width:$laptop-1) {
+      font-size: 30px;
+    }
+  }
+  
+  

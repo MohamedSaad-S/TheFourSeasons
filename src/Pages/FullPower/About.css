@@ -1,0 +1,45 @@
+:root {
+  --main: rgb(230, 230, 230);
+  --fontcolor: rgb(255, 255, 255);
+  --footer: rgba(31, 31, 31, 0.801);
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.about-fullpower {
+  background: rgba(0, 0, 0, 0.055) url("../../imgs/bg1.jpg") fixed center;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-fullpower .about-info {
+  margin: 94px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.6));
+  width: 50%;
+  border-radius: 10px;
+}
+
+.about-fullpower .about-info h1 {
+  font-family: "Josefin Sans", sans-serif;
+  width: 85%;
+  color: var(--fontcolor);
+  font-size: 50px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.about-fullpower .about-info p {
+  color: var(--main);
+}

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 45px 0px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+.footer .container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0px 15px;
+}
+
+.footer-col .footer-title {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col .footer-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    background-color: #e91e63;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    width: max-content;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-col .social-links a {
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.social-links .social-icon {
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-col .social-links .facebook:hover {
+    color: #4267B2;
+    background-color: white;
+    border-radius: 50%;
+    transition: color 0.2s ease;
+}
+
+.footer-col .social-links .whatsapp:hover {
+    color: #25d366;
+    transition: color 0.2s ease;
+}
+
+.footer-col .social-links .instagram:hover {
+    color: #cd486b;
+    transition: color 0.2s ease;
+}
+
+.footer-col .social-links .twitter:hover {
+    color: #1DA1F2;
+    transition: color 0.2s ease;
+}

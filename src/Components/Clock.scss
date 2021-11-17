@@ -1,0 +1,73 @@
+$desktop: 1260px;
+$desktop-1: 1259px;
+$laptop: 1024px;
+$laptop-1: 1023px;
+$tablet: 768px;
+$tablet-1: 767px;
+$mobile: 480px;
+
+.timer-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+
+.clock {
+    display: flex;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    color: white;
+    line-height: 40px;
+}
+
+.clock section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    @media (min-width:$mobile) and (max-width:$tablet-1){
+        padding: 0px;
+        margin: 0px 15px;
+    }
+}
+
+.clock span {
+    font-size: 50px;
+    @media (min-width:$mobile) and (max-width:$tablet-1) {
+        font-size: 35px;
+    }
+}
+
+.clock section p {
+    font-size: 65px;
+    @media (min-width:$mobile) and (max-width:$tablet-1) {
+        font-size: 45px;
+        margin-bottom: 0px;
+    }
+    @media (min-width:$tablet) and (max-width:$laptop-1) {
+        font-size: 55px;
+        margin-bottom: 0px;
+    }
+}
+
+.clock section small {
+    color: white;
+    text-shadow: none;
+    font-size: 20px;
+    font-weight: bold;
+    @media (min-width:$mobile) and (max-width:$tablet-1) {
+        font-size: 10px;
+    }
+    @media (min-width:$tablet) and (max-width:$laptop-1) {
+        font-size: 15px;
+    }
+}
+

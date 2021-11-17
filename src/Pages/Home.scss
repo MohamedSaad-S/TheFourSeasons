@@ -1,0 +1,144 @@
+/*
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
+$desktop: 1260px;
+$desktop-1: 1259px;
+$laptop: 1024px;
+$laptop-1: 1023px;
+$tablet: 768px;
+$tablet-1: 767px;
+$mobile: 480px;
+
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+  .App {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../imgs/bg3.jpg") fixed center;
+    background-blend-mode: darken;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  
+  .App .logo img{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    width: 150px;
+
+  }
+
+  
+  .App .header {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .App .header p {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 45%;
+    color: var(--fontcolor);
+    font-size: 40px;
+
+    @media (min-width: $mobile) and (max-width: $tablet-1) {
+      font-size: 25px;
+    }
+    @media (min-width: $tablet) and (max-width: $laptop-1){
+      font-size: 30px;
+    }
+    @media (min-width: $laptop) and (max-width: $desktop-1){
+      font-size: 35px;
+    }
+    @media (min-width: $desktop) {
+      font-size: 40px;
+    }
+    @media (min-width: $mobile) {
+      width: 80%;
+      font-weight: bold;
+      margin: 0px;
+    }
+  }
+  
+  /*Start threeWebBoxs*/
+  
+  .App .threeWebBoxs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    @media screen and (min-width:$mobile) and (max-width:$laptop-1) {
+    flex-wrap: wrap;
+    margin: 0px auto;
+    }
+  }
+  
+  .threeWebBoxs .box {
+    text-decoration: none;
+    width: 30%;
+    display: flex;
+    background-color: rgba(41, 41, 41, 0.227);
+    margin: 10px;
+    padding: 20px 0px;
+    justify-content: center;
+    border: 5px double var(--fontcolor);
+    @media (min-width:$mobile) and (max-width:$laptop-1) {
+      width: 50%;
+    }
+  }
+  
+  .threeWebBoxs .box:hover{
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.205);
+      transition: all 0.3s ease;
+  }
+  .threeWebBoxs .box:hover .box_content p:first-child {
+      color: var(--main);
+  }
+  
+  .threeWebBoxs .box .box_content {
+      width: 90%;
+      text-align: center;
+      align-items: center;
+      font-size: 16px;
+      color: var(--fontcolor);
+  }
+  
+  .threeWebBoxs .box .box_content p:first-child {
+    margin-bottom: 20px;
+    color: var(--fontcolor);
+    border-bottom: 10px groove var(--fontcolor);
+    border-width: 2px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    @media (min-width:$mobile) and (max-width:$tablet-1) {
+      font-size: 20px;
+    }
+    @media (min-width:$tablet) and (max-width:$laptop-1) {
+      font-size: 25px;
+    }
+  }
+  
+  /*End threeWebBoxs*/
+  
+  .underline {
+    margin: 20px auto;
+    margin-bottom: 100px;
+    width: 150px;
+    border: 2px solid var(--main);
+  }
+  
