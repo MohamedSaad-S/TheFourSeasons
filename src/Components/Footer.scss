@@ -1,14 +1,8 @@
-$desktop: 1260px;
-$desktop-1: 1259px;
-$laptop: 1024px;
-$laptop-1: 1023px;
-$tablet: 768px;
-$tablet-1: 767px;
-$mobile: 480px;
+@import "../Components/var.scss";
 
   .cr-info {
-    background-color:rgba(38, 39, 43, 0.87);
-    color:#919191;
+    background-color: $footerBackground;
+    color: $small-color;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -18,7 +12,7 @@ $mobile: 480px;
     padding: 15px;
     font-size:16px;
     margin: 0px;
-    @media (min-width:$mobile) and (max-width:$tablet-1){
+    @media (min-width:$medMobile) and (max-width:$tablet-1){
       font-size: 8px;
     }
     @media (min-width:$tablet) and (max-width:$laptop-1){
@@ -28,6 +22,6 @@ $mobile: 480px;
   }
 
   .copyright-text a {
-    color: rgb(253, 228, 0);
+    color: $matching-color;
     text-decoration: none
   }

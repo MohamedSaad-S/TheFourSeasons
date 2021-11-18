@@ -6,15 +6,8 @@
 1201px and more —  Extra large screens, TV
 */
 
-$desktop: 1260px;
-$desktop-1: 1259.9px;
-$laptop: 1024px;
-$laptop-1: 1023.9px;
-$tablet: 768px;
-$tablet-1: 767.9px;
-$bigMobile: 410px;
-$bigMobile-1: 409.9px;
-$medMobile: 380px;
+@import "../Components/var.scss";
+
 
 * {
   padding: 0%;
@@ -53,7 +46,7 @@ $medMobile: 380px;
   .App .header p {
     font-family: 'Josefin Sans', sans-serif;
     width: 100%;
-    color: var(--fontcolor);
+    color: $main-color;
     font-size: 40px;
 
     @media (min-width: $medMobile) and (max-width: $bigMobile-1) {
@@ -111,7 +104,7 @@ $medMobile: 380px;
       transition: all 0.3s ease;
   }
   .threeWebBoxs .box:hover .box_content p:first-child {
-      color: var(--main);
+      color: $main-color;
   }
   
   .threeWebBoxs .box .box_content {
@@ -119,13 +112,13 @@ $medMobile: 380px;
       text-align: center;
       align-items: center;
       font-size: 16px;
-      color: var(--fontcolor);
+      color: $small-color;
   }
   
   .threeWebBoxs .box .box_content p:first-child {
     margin-bottom: 20px;
-    color: var(--fontcolor);
-    border-bottom: 10px groove var(--fontcolor);
+    color: $main-color;
+    border-bottom: 10px groove $main-color;
     border-width: 2px;
     padding-bottom: 10px;
     font-size: 35px;
