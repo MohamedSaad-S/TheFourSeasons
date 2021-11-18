@@ -19,7 +19,7 @@ const Home = () => {
 
   const startTimer = () => {
 
-    const countdownDate = new Date("Nov 16, 2021 00:00:00").getTime()
+    const countdownDate = new Date("Dec 29, 2021 00:00:00").getTime()
 
     const now = new Date().getTime()
 
