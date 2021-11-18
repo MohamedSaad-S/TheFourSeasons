@@ -92,7 +92,7 @@
     margin: 10px;
     padding: 20px 0px;
     justify-content: center;
-    border: 5px double var(--fontcolor);
+    border: 5px double $main-color;
     @media (min-width:$medMobile) and (max-width:$laptop-1) {
       width: 80%;
     }
@@ -137,6 +137,6 @@
     margin: 20px auto;
     margin-bottom: 100px;
     width: 150px;
-    border: 2px solid var(--main);
+    border: 2px solid $main-color;
   }
   
