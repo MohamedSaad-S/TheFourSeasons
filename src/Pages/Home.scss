@@ -51,14 +51,14 @@ $mobile: 480px;
   .App .header p {
     font-family: 'Josefin Sans', sans-serif;
     width: 45%;
-    color: var(--fontcolor);
+    color: blue;
     font-size: 40px;
 
     @media (min-width: $mobile) and (max-width: $tablet-1) {
-      font-size: 12px;
+      font-size: 25px;
     }
     @media (min-width: $tablet) and (max-width: $laptop-1){
-      font-size: 12px;
+      font-size: 30px;
     }
     @media (min-width: $laptop) and (max-width: $desktop-1){
       font-size: 35px;
@@ -67,6 +67,7 @@ $mobile: 480px;
       font-size: 40px;
     }
     @media (min-width: $mobile) {
+      font-size: 12px;
       width: 80%;
       font-weight: bold;
       margin: 0px;
