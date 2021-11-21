@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import Cliploader from "react-spinners/ClipLoader";
+import FadeLoader from "react-spinners/FadeLoader";
 import logo from "../logo/logo@2x.png";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
@@ -60,18 +60,21 @@ const Home = () => {
     return () => clearInterval(interval)
   })
 
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState()
 
   useEffect(() => {
     setLoading(true)
-    
+    setTimeout(() => {
+      setLoading(false)
+    }, )
   }, [])
 
   return (
     <Fragment>
     {loading ?
-      <Cliploader
-        size={150}
+      <FadeLoader
+        size={60}
+        margin={2}
         color={"#123abc"}
         loading={loading}
       />
