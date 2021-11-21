@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
+import Cliploader from "react-spinners/ClipLoader";
 import logo from "../logo/logo@2x.png";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
@@ -59,7 +60,23 @@ const Home = () => {
     return () => clearInterval(interval)
   })
 
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    setLoading(true)
+    
+  }, [])
+
   return (
+    <Fragment>
+    {loading ?
+      <Cliploader
+        size={150}
+        color={"#123abc"}
+        loading={loading}
+      />
+      :
+
     <div className="App">
       <div className="logo">
         <a href="#top">
@@ -105,6 +122,9 @@ const Home = () => {
       <EmailNotify />
       <Footer />
     </div>
+    }
+
+    </Fragment>
   );
 };
 

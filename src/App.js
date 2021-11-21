@@ -18,15 +18,15 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route exact path="/FullPower" component={FullPower}/>
-          <Route exact path="/FullPower/About" component={AboutFullPower}/>
-          <Route exact path="/TigerSpeed" component={TigerSpeed}/>
-          <Route exact path="/TigerSpeed/About" component={AboutTigerSpeed}/>
-          <Route exact path="/SkyPoint" component={SkyPoint}/>
-          <Route exact path="/SkyPoint/About" component={AboutSkyPoint}/>
-        </Switch>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/FullPower" component={FullPower} />
+            <Route exact path="/FullPower/About" component={AboutFullPower} />
+            <Route exact path="/TigerSpeed" component={TigerSpeed} />
+            <Route exact path="/TigerSpeed/About" component={AboutTigerSpeed} />
+            <Route exact path="/SkyPoint" component={SkyPoint} />
+            <Route exact path="/SkyPoint/About" component={AboutSkyPoint} />
+          </Switch>
       </Router>
     )
   }
